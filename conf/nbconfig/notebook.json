@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "execute_time/ExecuteTime": true
+  }
+}

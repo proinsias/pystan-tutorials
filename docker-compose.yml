@@ -1,0 +1,23 @@
+---
+version: "3.7"
+
+services:
+
+  pystan:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: jupyter
+    environment:
+      # Will get these values from environment or .env file.
+      - USER=${USER}
+    init: true
+    ports:
+      - "8888-8900:8888-8900"  # For Jupyter Notebook.
+    volumes:
+      # Mount the local repo for development - i.e., no need to docker-compose build unless Dockerfile changes.
+      - .:/root/pystan
+      # Mount the local ~/.cache directory to speed up pip and pip-tools functionality.
+      - ${HOME}/.cache:/root/.cache
+      # Mount the local ~/.ccache directory to speed up gcc/g++ functionality.
+      - ${HOME}/.ccache:/root/.ccache

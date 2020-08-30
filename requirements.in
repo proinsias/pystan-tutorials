@@ -1,0 +1,13 @@
+arviz
+ipyparallel
+jupyter
+jupyter-contrib-nbextensions
+matplotlib
+numpy
+pandas
+pip-tools
+pystan
+scikit-learn
+scipy
+seaborn
+statsmodels

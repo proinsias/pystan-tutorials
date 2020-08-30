@@ -7,19 +7,3 @@ set -o nounset  # Don't allow use of undefined vars. Use ${VAR:-} to use an unde
 set -o pipefail  # Produce a failure return code if any pipeline command errors.
 shopt -s failglob  # Cause globs that don't get expanded to cause errors.
 shopt -s globstar 2> /dev/null  # Match all files and zero or more sub-directories.
-
-export PIPENV_IGNORE_VIRTUALENVS=1
-
-pipenv install \
-    arviz \
-    ipyparallel \
-    jupyter \
-    jupyter_contrib_nbextensions \
-    matplotlib \
-    numpy \
-    pandas \
-    pystan \
-    scikit-learn \
-    scipy \
-    seaborn \
-    statsmodels
