@@ -289,7 +289,7 @@ cars_dat = {'N': X_train.shape[0],
 # In[27]:
 sm = pystan.StanModel(model_code=cars_code, verbose=True)  # FIXME: SET VERBOSE TO FALSE.
 # In[28]:
-# fit = sm.sampling(data=cars_dat, iter=6000, chains=8, n_jobs=1)  # FIXME: SET N_JOBS BACK TO -1.
+# fit = sm.sampling(data=cars_dat, iter=6000, chains=8, n_jobs=1)
 # Took 14 hours.
 # In[ ]:
 fit = sm.sampling(data=cars_dat, iter=6000, chains=8)
