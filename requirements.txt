@@ -172,13 +172,15 @@ parso==0.7.1
     # via jedi
 patsy==0.5.1
     # via statsmodels
+pep517==0.10.0
+    # via pip-tools
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
 pillow==7.2.0
     # via matplotlib
-pip-tools==5.3.1
+pip-tools==6.1.0
     # via -r requirements.in
 prometheus-client==0.8.0
     # via notebook
@@ -249,7 +251,6 @@ six==1.15.0
     #   jsonschema
     #   packaging
     #   patsy
-    #   pip-tools
     #   python-dateutil
     #   traitlets
 statsmodels==0.12.0
@@ -260,6 +261,8 @@ testpath==0.4.4
     # via nbconvert
 threadpoolctl==2.1.0
     # via scikit-learn
+toml==0.10.2
+    # via pep517
 tornado==6.0.4
     # via
     #   ipykernel
