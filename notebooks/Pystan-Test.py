@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# coding: utf-8
+# -*- coding: utf-8 -*-
 # In[1]:
 import pystan
 model_code = 'parameters {real y;} model {y ~ normal(0,1);}'

@@ -114,9 +114,9 @@ RUN safety --version
 
 ### Test script files.
 
-COPY ./bin/*.sh "${APP_DIR}"/bin/
+COPY ./bin/* "${APP_DIR}"/bin/
 
-RUN shellcheck "${APP_DIR}"/bin/*.sh
+RUN shellcheck "${APP_DIR}"/bin/*
 
 ### Python Setup ###
 
@@ -152,7 +152,7 @@ RUN \
     jupyter nbextension enable toc2/main && \
     safety check --file "${APP_DIR}"/requirements.txt --full-report
 
-RUN "${APP_DIR}"/bin/docker-entrypoint.sh exec bash --version
+RUN "${APP_DIR}"/bin/docker-entrypoint exec bash --version
 
 # Test Dockerfile.
 COPY ./Dockerfile "${APP_DIR}"/
@@ -162,7 +162,7 @@ RUN hadolint "${APP_DIR}"/Dockerfile
 # SHELL: Set the terminal for Jupyter Notebook.
 ENV SHELL=/bin/bash
 
-ENTRYPOINT ["sh", "/root/pystan/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["sh", "/root/pystan/bin/docker-entrypoint"]
 
 # HEALTHCHECK --interval=5m --start-period=30s --timeout=10s \
 #     CMD curl --fail --silent http://host.docker.internal:8888 || exit 1

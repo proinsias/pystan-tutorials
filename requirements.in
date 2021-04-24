@@ -1,12 +1,15 @@
 arviz
 ipyparallel
+jinja2>=2.11.3  # safety vulnerability #39525.
 jupyter
 jupyter-contrib-nbextensions
+lxml>=4.6.3  # safety vulnerability #40072.
 matplotlib
 numpy
 pandas
 pip-tools
 pystan
+pyyaml>=5.4  # safety vulnerability #39611.
 scikit-learn
 scipy
 seaborn

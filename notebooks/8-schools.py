@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# coding: utf-8
+# -*- coding: utf-8 -*-
 # From pystan quick start [guide](https://pystan.readthedocs.io/en/latest/getting_started.html).
 # In[1]:
 import arviz

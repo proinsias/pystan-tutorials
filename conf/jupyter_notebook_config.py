@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Configuration file for jupyter-notebook.
 
 #------------------------------------------------------------------------------
@@ -42,7 +43,7 @@ def post_save(model, os_path, contents_manager):
         return # only do this for notebooks
 
     import nbformat
-    notebook = nbformat.read(os_path, as_version=nbformat.NO_CONVERT, )
+    notebook = nbformat.read(os_path, as_version=nbformat.NO_CONVERT)
 
     import nbconvert
 
@@ -64,10 +65,12 @@ def post_save(model, os_path, contents_manager):
             # Python 2
             py_file.write(body.encode('utf-8'))
 
-    print('Converting notebook {0} to python file {1}...'.format(
-          os.path.basename(os_path),
-          os.path.basename(python_filename),
-          ))
+    print(
+        'Converting notebook {} to python file {}...'.format(
+        os.path.basename(os_path),
+        os.path.basename(python_filename),
+        ),
+    )
 
 
 c.FileContentsManager.post_save_hook = post_save
