@@ -52,10 +52,6 @@ httpstan==4.4.2
     # via pystan
 idna==3.1
     # via yarl
-importlib-metadata==4.0.1
-    # via
-    #   jsonschema
-    #   pep517
 ipykernel==5.5.3
     # via
     #   ipyparallel
@@ -285,7 +281,7 @@ qtpy==1.9.0
     # via qtconsole
 scikit-learn==0.24.1
     # via -r requirements.in
-scipy==1.6.2
+scipy==1.6.3
     # via
     #   -r requirements.in
     #   arviz
@@ -345,8 +341,6 @@ typing-extensions==3.7.4.3
     # via
     #   aiohttp
     #   arviz
-    #   importlib-metadata
-    #   yarl
 wcwidth==0.2.5
     # via prompt-toolkit
 webargs==7.0.1
@@ -359,10 +353,6 @@ xarray==0.17.0
     # via arviz
 yarl==1.6.3
     # via aiohttp
-zipp==3.4.1
-    # via
-    #   importlib-metadata
-    #   pep517
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
