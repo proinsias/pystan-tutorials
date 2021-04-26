@@ -1,4 +1,4 @@
-# yamllint disable-line rule:document-start
+ # yamllint disable-line rule:document-start
 name: Pull Requests & Pushes
 
 # yamllint disable-line rule:truthy
@@ -30,12 +30,6 @@ jobs:
           # Change reporter level if you need.
           # GitHub Status Check won't become failure with warning.
           level: warning
-
-      - name: Detect Secrets
-        uses: reviewdog/action-detect-secrets@v0.4.3
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
 
       - name: markdownlint
         uses: reviewdog/action-markdownlint@v0.1
