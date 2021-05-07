@@ -42,19 +42,19 @@ repos:
   # Git
 
   - repo: https://github.com/jorisroovers/gitlint
-    rev: v0.15.0
+    rev: v0.15.1
     hooks:
       - id: gitlint
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.3.0
+    rev: 0.3.1
     hooks:
       - id: check-github-workflows
 
   # Markdown
 
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.6.4
+    rev: 0.7.5
     hooks:
       - id: mdformat
         additional_dependencies:
@@ -84,7 +84,7 @@ repos:
       - id: python-safety-dependencies-check
 
   - repo: https://github.com/jazzband/pip-tools
-    rev: 6.0.1
+    rev: 6.1.0
     hooks:
       - id: pip-compile
         files: ^requirements/production\.(in|txt)$
@@ -92,7 +92,7 @@ repos:
 
   - repo: https://github.com/asottile/pyupgrade
     # Automatically upgrade syntax for newer versions of the language.
-    rev: v2.11.0
+    rev: v2.14.0
     hooks:
       - id: pyupgrade
 
@@ -117,7 +117,7 @@ repos:
       - id: shfmt
 
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.1.9
+    rev: v1.1.10
     hooks:
       - id: remove-crlf
       - id: remove-tabs
