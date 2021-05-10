@@ -143,7 +143,7 @@ marshmallow==3.11.1
     # via
     #   httpstan
     #   webargs
-matplotlib==3.4.1
+matplotlib==3.4.2
     # via
     #   -r requirements.in
     #   arviz
