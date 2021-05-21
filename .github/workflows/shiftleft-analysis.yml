@@ -6,8 +6,8 @@
 name: ShiftLeft Scan
 
 # This section configures the trigger for the workflow.
-# Feel free to customize depending on your convention
-on: push
+# Feel free to customize depending on your conventio
+on: pull_request
 
 jobs:
   Scan-Build:
