@@ -81,7 +81,7 @@ ipywidgets==7.6.3
     # via jupyter
 jedi==0.18.0
     # via ipython
-jinja2==3.0.0
+jinja2==3.0.1
     # via
     #   -r requirements.in
     #   nbconvert
