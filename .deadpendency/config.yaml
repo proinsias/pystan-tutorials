@@ -7,6 +7,8 @@ ignore-failures:
         - async-timeout
         - cycler
         - entrypoints
+        - ipython-genutils
+        - jupyter
         - jupyter-contrib-core
         - jupyter-contrib-nbextensions
         - jupyter-highlight-selected-word
