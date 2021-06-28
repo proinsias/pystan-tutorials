@@ -200,7 +200,7 @@ packaging==20.9
     # via
     #   arviz
     #   bleach
-pandas==1.2.4
+pandas==1.2.5
     # via
     #   -r requirements.in
     #   arviz
