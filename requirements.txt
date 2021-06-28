@@ -62,6 +62,13 @@ ipykernel==5.5.3
     #   qtconsole
 ipyparallel==6.3.0
     # via -r requirements.in
+ipython==7.22.0
+    # via
+    #   ipykernel
+    #   ipyparallel
+    #   ipywidgets
+    #   jupyter-console
+    #   jupyter-latex-envs
 ipython-genutils==0.2.0
     # via
     #   ipyparallel
@@ -70,13 +77,6 @@ ipython-genutils==0.2.0
     #   notebook
     #   qtconsole
     #   traitlets
-ipython==7.22.0
-    # via
-    #   ipykernel
-    #   ipyparallel
-    #   ipywidgets
-    #   jupyter-console
-    #   jupyter-latex-envs
 ipywidgets==7.6.3
     # via jupyter
 jedi==0.18.0
@@ -90,6 +90,8 @@ joblib==1.0.1
     # via scikit-learn
 jsonschema==3.2.0
     # via nbformat
+jupyter==1.0.0
+    # via -r requirements.in
 jupyter-client==6.1.12
     # via
     #   ipykernel
@@ -123,8 +125,6 @@ jupyter-latex-envs==1.4.6
     # via jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator==0.4.1
     # via jupyter-contrib-nbextensions
-jupyter==1.0.0
-    # via -r requirements.in
 jupyterlab-pygments==0.1.2
     # via nbconvert
 jupyterlab-widgets==1.0.0
@@ -180,7 +180,7 @@ notebook==6.3.0
     #   jupyter-latex-envs
     #   jupyter-nbextensions-configurator
     #   widgetsnbextension
-numpy==1.20.3
+numpy==1.21.0
     # via
     #   -r requirements.in
     #   arviz
