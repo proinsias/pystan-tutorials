@@ -19,6 +19,7 @@ ignore-failures:
         - patsy
         - pickleshare
         - pylev
+        - qtpy
         - send2trash
         - testpath
         - webencodings
